@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Android Risk</string>
+	<string name="contacting_server">Contacting server ...</string>
+	<string name="result"></string>
+	<string name="test">test</string> 
+
+</resources>

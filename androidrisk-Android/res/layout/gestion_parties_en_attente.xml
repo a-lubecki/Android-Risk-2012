@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="10dp"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/TextView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Parties en attente"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout10"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout11"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="50"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textViewPartiesServeur"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="Parties existantes (connexion...)"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <ListView
+                android:id="@+id/listViewPartiesServeurEnAttente"
+                android:layout_width="fill_parent"
+                android:layout_height="150dp"
+                android:layout_marginRight="5dp"
+                android:choiceMode="singleChoice" 
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:descendantFocusability="beforeDescendants"
+                android:clickable="true"
+                android:saveEnabled="true" >
+            </ListView>
+            
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout12"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="50"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textViewPartiesSelectionnees"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="Parties selectionnées (3/10)"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <ListView
+                android:id="@+id/listViewMesPartiesEnAttente"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginLeft="5dp"
+                android:choiceMode="singleChoice"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:descendantFocusability="beforeDescendants"
+                android:clickable="true"
+                android:saveEnabled="true"  >
+            </ListView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/imageViewRefreshParties"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.3"
+            android:layout_marginBottom="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_gravity="center"
+            android:src="@drawable/refresh" />
+
+        <Button
+            android:id="@+id/buttonCreerPartie"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="Créer une partie" />
+
+        <Button
+            android:id="@+id/buttonRejoindreQuitterPartie"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/buttonMesPartiesEnCours"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="Parties en cours (5)" />
+    </LinearLayout>
+
+</LinearLayout>

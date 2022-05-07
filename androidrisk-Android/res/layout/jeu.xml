@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="70"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical"
+                android:text="Nombre d&apos;unités" />
+
+            <TextView
+                android:id="@+id/textViewNbUnitesPlacees"
+                android:layout_width="50dp"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:text="150"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <fr.istic.androidrisk.ihm.play.SeekBarNbUnits
+                android:id="@+id/seekBarNombreUnites"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4dp" />
+        </LinearLayout>
+
+        <fr.istic.androidrisk.ihm.play.MapViewORM
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/mapView"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_margin="4dp"
+            android:layout_weight="85"
+            android:apiKey="0MYoDsz7BRTsShDCvPSx3hLcYPcfSk7kbL7fS8w"
+            android:clickable="true"
+			android:focusable="true"
+			android:focusableInTouchMode="true"
+            android:enabled="true" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout5"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="18"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/imageViewActiverSenseurs"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="20"
+                android:contentDescription="Senseurs"
+                android:src="@drawable/senseurs_actives" />
+
+            <fr.istic.androidrisk.ihm.play.EditTextHistory
+                android:id="@+id/editTextHistorique"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="80"
+                android:clickable="true"
+                android:cursorVisible="false"
+                android:editable="false"
+                android:focusable="false"
+                android:gravity="top"
+                android:inputType="textMultiLine"
+                android:lines="3"
+                android:textSize="10dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="30"
+        android:orientation="vertical" >
+
+        <fr.istic.androidrisk.ihm.play.TableLayoutPlayersList
+            android:id="@+id/tableLayoutListeJoueurs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+        </fr.istic.androidrisk.ihm.play.TableLayoutPlayersList>
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="50"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/imageViewMain"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="50"
+                android:contentDescription="Senseurs"
+                android:src="@drawable/dos_carte_a_jouer" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout4"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="50"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textViewNumeroTour"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Tour 42"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#FFFFFF" />
+
+                <TextView
+                    android:id="@+id/textViewNomPhase"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="Phase nom"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonTerminerPhase"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Terminer phase"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+</LinearLayout>

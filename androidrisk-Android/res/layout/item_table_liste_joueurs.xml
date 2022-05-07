@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/itemTableNomJoueur"
+        android:layout_width="0dp"
+        android:layout_weight="70"
+        android:layout_height="wrap_content"
+        android:text="nom"
+        android:textColor="#FFFFFF"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/itemTableNbUnites"
+        android:layout_width="0dp"
+        android:layout_weight="15"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="253"
+        android:textColor="#FFFFFF"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+    
+    <TextView
+        android:id="@+id/itemTableNbTerritoires"
+        android:layout_width="0dp"
+        android:layout_weight="15"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="100"
+        android:textColor="#FFFFFF"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+</TableRow>
